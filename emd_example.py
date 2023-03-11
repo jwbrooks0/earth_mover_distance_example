@@ -109,6 +109,7 @@ if __name__ == "__main__":
 		fig.savefig(filename, dpi=100)
 		_plt.close(fig)
 		
+	## move the second gaussian from -1 to +1 and calculate EMD for each location
 	x0_array = _np.linspace(-1, 1, 75)
 	x0_array = _xr.DataArray(x0_array, coords={"x0": x0_array})
 	emd_array = x0_array * 0.0
